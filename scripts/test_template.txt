@@ -1,0 +1,18 @@
+import os
+import sys
+
+DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+if DIR not in sys.path:
+    sys.path.append(DIR)
+
+import day_%%DAY%%  # noqa: E402
+import helpers as h  # noqa: E402
+
+
+def test_%%DAY%%():
+    data = h.load_day_data('%%DAY%%', sample=True)
+    one, two = day_%%DAY%%.solution(data)
+
+    assert one is None
+    assert two is None
