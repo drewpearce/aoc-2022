@@ -1,0 +1,10 @@
+from helpers import load_day_data
+
+
+def solution(data):
+    return None, None
+
+
+if __name__ == '__main__':
+    data = load_day_data('%%DAY%%')
+    solution(data)

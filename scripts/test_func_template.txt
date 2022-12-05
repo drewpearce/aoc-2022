@@ -1,0 +1,8 @@
+
+
+def test_%%DAY%%():
+    data = h.load_day_data('%%DAY%%', sample=True)
+    one, two = day_%%DAY%%.solution(data)
+
+    assert one is None
+    assert two is None
