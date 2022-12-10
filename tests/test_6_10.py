@@ -10,6 +10,7 @@ import day_06  # noqa: E402
 import day_07  # noqa:E402
 import day_08  # noqa:E402
 import day_09  # noqa:E402
+import day_10  # noqa:E402
 import helpers as h  # noqa: E402
 
 
@@ -43,3 +44,11 @@ def test_09():
 
     assert one == 13
     assert two == 1
+
+
+def test_10():
+    data = h.load_day_data('10', sample=True)
+    one, two = day_10.solution(data)
+
+    assert one == 13140
+    assert two is None
