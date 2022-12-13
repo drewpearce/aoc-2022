@@ -8,6 +8,7 @@ if DIR not in sys.path:
 
 import day_11  # noqa: E402
 import day_12  # noqa:E402
+import day_13  # noqa:E402
 import helpers as h  # noqa: E402
 
 
@@ -25,3 +26,11 @@ def test_12():
 
     assert one == 31
     assert two == 29
+
+
+def test_13():
+    data = h.load_day_data('13', sample=True)
+    one, two = day_13.solution(data)
+
+    assert one == 13
+    assert two == 140
