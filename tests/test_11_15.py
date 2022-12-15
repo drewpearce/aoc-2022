@@ -44,3 +44,11 @@ def test_14():
 
     assert one == 24
     assert two == 93
+
+
+def test_15():
+    data = h.load_day_data('15', sample=True)
+    one, two = day_15.solution(data, sample=True)
+
+    assert one == 26
+    assert two == 56000011
